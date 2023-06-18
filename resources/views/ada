@@ -1,0 +1,27 @@
+<div class="col-lg-12">
+    <div class="card " style="width: 18rem;">
+        <div class="card-header">
+            Profile
+        </div>
+        <div class="row">
+            <div class="col-1 col-lg-1"></div>
+            <div class="col-8 col-lg-6"><img class="center"
+                    src="/{{ $user->image }}"
+                    class="rounded-circle" alt="...">
+            </div>
+        </div>
+        <div class="card-body text-center">
+            <h5 class="card-title">{{ $user->name }}</h5> <!-- Nama -->
+            <p class="card-text">Email: {{ $user->email }}</p> <!-- Email -->
+            
+            @if(Auth::check())
+                @if(auth()->user()->id == $user->id)
+            <div class="mt-2">
+                <a href="#" class="card-link fa fa-cogs" style="color: #f48840;"></a>
+                <a href="ml-3" style="color: #f48840;">Edit Profile</a>
+            </div>
+                @endif
+          @endif
+        </div>
+    </div>
+</div>
