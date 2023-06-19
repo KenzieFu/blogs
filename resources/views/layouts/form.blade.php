@@ -10,7 +10,12 @@
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
 
     <!-- Main css -->
-    <link rel="stylesheet" href="css/Formcss/style.css">
+    <link rel="stylesheet" href="css/Formcss/logreg.css">
+
+    <script
+    src="https://kit.fontawesome.com/64d58efce2.js"
+    crossorigin="anonymous"
+  ></script>
 </head>
 <body>
 
@@ -18,6 +23,6 @@
 
  <!-- JS -->
  <script src="vendors/jquery/jquery.min.js"></script>
- <script src="js/formjs/main.js"></script>
+ <script src="js/jsform/main.js"></script>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
